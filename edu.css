@@ -1,0 +1,44 @@
+body{
+
+background-image:url("quill.png");position:fixed;
+}
+h1{font-family:Harrington;color:white;font-size:55;text-align:left;text-decoration:underline;}
+p{font-family:gabriola;color:white;font-size:32;}
+ul{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	width:97%;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+#sl{
+background-color:white;
+width:300px;
+height:280px;border-style: inset;border-width:10px;font-size:20;text-align:left;
+color:rgb(128, 138, 255);
+}
+#s2{
+background-color:white;
+position:absolute;
+left:500px;
+top:330px;
+width:300px;
+height:280px;border-style: inset;border-width:10px;font-size:20;text-align:left;
+color:rgb(128, 138, 255);
+}

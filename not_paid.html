@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body background="paywo_841454621.png" onload="window.alert('FEE NOT PAID !! ')" >
+    <center><form action="gate.jsp" style="border:3px groove black; width:400px; margin-top:200px;background-color:rgb(117, 177, 132);padding:8px;  ">
+          <table>
+            <tr>
+                <td style="color:white; font-size:20;">Username<td>:</td><td><input type="text" name="username"  style="width:100%;"></td>
+            </tr>
+            <tr>
+                <td style="color:white;font-size:20;">Password</td><td>:</td><td><input type="password" name="password" style="width:100%;"></td>
+            </tr>
+            <tr>
+                <td style="color:white;font-size:20;" >Mode of payment</td> <td>:</td>
+                <td><select name="pay" style="width:100%;">
+                        <option value="debit">DEBIT CARD</option>
+                        <option value="credit">CREDIT CARD</option>
+                        <option value="net">INTERNET BANKING</option>
+                       
+                    </select></td>
+            </tr>
+          </table><br>
+          <input type="submit" value="MAKE PAYMENT" style="width:130px;">
+         </form></center>
+        </body>
+</html>

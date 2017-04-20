@@ -1,0 +1,70 @@
+<html>
+<head><title>FORM</title>
+<script>
+function check()
+{
+var v=document.getElementById("no").value;
+if(isNaN(v))
+{document.getElementById("on").innerHTML="Invalid input";}
+}
+function check2()
+{
+var l=(document.getElementById("c2").value).length;
+if(l<5)
+{document.getElementById("p2").innerHTML="Min Length 5"}
+else
+{document.getElementById("p2").innerHTML="correct"}
+}
+function check3()
+{
+var l2=(document.getElementById("c2").value);
+var l3=(document.getElementById("c3").value);
+if(l2!=l3)
+{document.getElementById("p3").innerHTML="incorrect"}
+else
+{document.getElementById("p3").innerHTML="correct"}
+}
+
+</script>
+<style>
+.ast
+{color:red;
+ font-size:20;
+ text-align:right;}
+</style>
+</head>
+<body style="background-color:white;">
+<div style="background-color:rgb(117, 177, 210);  color:white;padding:5px;"><h1>Course Regitration Form :</h1></div><br>
+<form action="login.jsp" style="background-color:rgb(117, 177, 132); width:70%;height:90%;color:white;font-size:20;">
+<table style="background-color:rgb(117, 177, 132); width:80%;height:50%;color:white;font-size:20;padding:5px;">
+    <tr>
+        <td>First Name<span class="ast">*</span></td><td> : </td><td ><input type="text" name="first" placeholder="First Name" style="width:80%;"></td><td style="visibility: hidden;">Min Length 5<td></tr> 
+ <tr><td>
+ Last Name<span class="ast">*</span></td><td> :</td><td> <input type="text" name="last" placeholder="Last Name" style="width:80%;"></td><td><td></tr>
+<tr><td>
+ Date Of Birth</td><td> :</td><td><input type="date" name="dob" style="width:80%;"></td><td><td></tr>
+ <tr><td>
+ Email<span class="ast">*</span></td><td> :</td><td> <input type="text" name="mail" placeholder="example@gmail.com" style="width:80%;"></td><td><td></tr>
+ <tr><td>
+ Contact number</td><td> :</td><td> <input type="text" name="mobile" id="no" onInput="check()" onchange="check()" style="width:80%;"></td><td id="on" class="ast"></td></tr>
+<tr><td>
+ Gender</td><td> :</td><td><input type="radio" name="g" value="Male" checked>Male     <input type="radio" name="g" value="Female">Female     <input type="radio" name="g" value="Other">Other</td><td><td></tr>
+
+ <tr><td style="visibility: hidden;">HIDDEN</td></tr><tr><td>
+ Course</td><td>:</td><td> <select name="course" style="width:80%;"><option value="Mechanics">-------  select  -------</option><option value="Mechanics">Mechanics</option>
+<option value="Mechanics">Magnetics</option>
+<option value="Eletrostats">Eletrostats</option>
+<option value="Mordern Physics">Mordern Physics</option>
+<option value="Projects">Projects</option></select></td><td></td></tr>
+<tr><td style="visibility: hidden;">HIDDEN</td></tr><tr><td>User name</td><td>:</td><td> <input type="text" name="usn" style="width:80%;" ></td><td></td><td></tr>
+<tr><td>Password</td><td>:</td><td> <input type="password" name="pass" oninput="check2()"  id="c2" style="width:80%;"></td><td id="p2" class="ast"></td></tr><br>
+<tr><td>Confirm Password</td><td>:</td><td> <input type="password" name="pass" oninput="check3()"  id="c3" style="width:80%;"></td><td id="p3" class="ast"></td></tr>
+<tr><td style="visibility: hidden;">HIDDEN</td></tr><tr><td></td><td><input type="submit" value="SUBMIT"></td></tr>
+
+ </table>
+<img src="pad.png" style="width:40%; position:absolute;top:100px;left:930;width:30%"><script>
+window.alert("Welcome for Course Registration Window . . .");
+</script>
+</form>
+</body>
+</html>
